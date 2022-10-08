@@ -1,0 +1,139 @@
+@import url("../../../css/variables.css");
+
+/* Put here any 'about.html' specific css */
+
+.about-category {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    text-align: center;
+    padding: 10px var(--horizontal-padding) 10px var(--horizontal-padding);
+}
+
+/* ---------------------------------------------------------------- */
+
+.top-part {
+    min-height: fit-content;
+    max-height: 100%;
+    justify-content: flex-start;
+    overflow-y: hidden;
+}
+
+.about-sub-category {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+    text-align: center;
+}
+
+.about-app-infos {
+    min-height: fit-content;
+    max-height: 100%;
+}
+
+.about-app-name {
+    height: fit-content;
+    font-size: 40px;
+    font-family: 'Roboto-Bold';
+}
+
+.about-app-version {
+    height: fit-content;
+    font-size: 25px;
+    font-family: 'Roboto-Bold-Italic';
+}
+
+.about-credits-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-credits {
+    min-height: 0%;
+    max-height: 100%;
+    font-size: 16px;
+    font-size: 100%;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+.about-credit {
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.middle-part {
+    min-height: fit-content;
+    max-height: fit-content;
+    background-color: var(--gray-80);
+    padding-top: 0;
+}
+
+.about-warning {
+    height: fit-content;
+    justify-content: flex-end;
+    font-size: 130%;
+    font-family: 'Roboto-Bold';
+    padding: 10px 0 10px 0;
+    color: var(--lazr-red);
+}
+
+.about-warning-text {
+    height: fit-content;
+    justify-content: flex-start;
+    font-size: 90%;
+    font-family: 'Roboto-Medium';
+    color: var(--gray-10);
+}
+
+/* ---------------------------------------------------------------- */
+
+.bottom-part {
+    min-height: 15%;
+    max-height: 25%;
+    background-color: #ffffff;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.lazr-card {
+    height: 100%;
+    min-width: 30%;
+    font-family: 'Roboto-Medium';
+}
+
+.lazr-logo {
+    height: 50%;
+}
+
+.links-card {
+    height: 100%;
+    min-width: 50%;
+}
+
+.about-link {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    background-color: #ffffff;
+    box-shadow: #00000025 0 5px 20px;
+}
+
+.github-logo {
+    box-sizing: border-box;
+    height: 100%;
+}
