@@ -29,9 +29,9 @@
     --html-background-color: #ffffff;
     
     /* Font colors */
-    --font-color-default: var(--gray-70);
+    --font-color-default: var(--gray-60);
 
-    --font-color-links: var(--gray-70);
+    --font-color-links: var(--gray-60);
 
     --font-color-header: var(--on-primary);
     --font-color-header-hover: var(--on-primary);

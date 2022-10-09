@@ -13,8 +13,9 @@ export const renderPage = () => {
         <div class="json-wizard-intro-area">
             <h1>JSON Wizard</h1>
             <span>
-                Here you can export your local storage data if you need to save it for later (cache cleaning, browser or device update, etc),
-                and import external data (which needs to be formatted exactly as the export).
+                Here you can export your local storage data if you need to save it for later (cache cleaning, browser or device update, etc).<br>
+                <br>
+                You can also import external data, but they need to be formatted exactly as the export.
             </span>
             <div class="json-wizard-icon-area">
                 <img class="json-wizard-icon" src="./images/wand-magic-sparkles-solid.svg" alt="a magic wand with sparkles" style="filter: ${primaryFilter};" />

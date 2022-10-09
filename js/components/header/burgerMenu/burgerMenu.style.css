@@ -57,10 +57,11 @@
     align-items: center;
     height: fit-content;
     width: 100%;
-    padding: 5% 10% 5% 7.5%;
+    padding: 7.5% 10% 7.5% 7.5%;
     color: var(--font-color-default);
-    border-bottom: 1px solid var(--font-color-default);    
-    font-size: 16px;
+    border-bottom: 1px solid var(--gray-10);
+    font-size: 18px;
+    font-family: 'Roboto-Medium';
 }
 .burger-menu-page:hover {
     text-decoration: none;
@@ -92,19 +93,11 @@
     height: fit-content;
     padding: 0;
     color: var(--on-primary);
-    font-size: 12px;
 }
 
 .burger-menu-util {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: fit-content;
-    height: 100%;
     width: 100%;
     color: var(--on-primary);
-    font-size: 12px;
     border-bottom: 1px solid var(--primary-hover);   
 }
     .burger-menu-util:hover {
