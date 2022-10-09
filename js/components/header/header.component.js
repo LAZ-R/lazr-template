@@ -12,7 +12,6 @@ export const renderView = () => {
     
     headerIndexLink.appendChild(headerLogo);
     header.appendChild(headerIndexLink);
-
     if (LAZR.BREAKPOINTS.isPhone || LAZR.BREAKPOINTS.isTablet) {
         BURGER_MENU.renderView();
     } else {

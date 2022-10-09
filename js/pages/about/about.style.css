@@ -1,5 +1,3 @@
-@import url("../../../css/variables.css");
-
 /* Put here any 'about.html' specific css */
 
 .about-category {
@@ -80,11 +78,30 @@
 
 .about-warning {
     height: fit-content;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-size: 130%;
     font-family: 'Roboto-Bold';
     padding: 10px 0 10px 0;
     color: var(--lazr-red);
+}
+
+.about-warning > div {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lazr-red);
+    padding: .5%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 5%;
+}
+
+.about-warning > div > img {
+    width: 100%;
 }
 
 .about-warning-text {

@@ -1,5 +1,3 @@
-@import url("../../../../css/variables.css");
-
 /* Put here any 'burgerMenu' specific css */
 
 .header-burger-menu-button {
@@ -41,7 +39,7 @@
     transition: right .2s ease-in-out;
 }
 
-.burger-menu-links {
+.burger-menu-pages {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -52,47 +50,104 @@
     overflow-y: scroll;
 }
 
-.burger-menu-link {
+.burger-menu-page {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: fit-content;
     width: 100%;
-    padding: 5% 10% 5% 10%;
+    padding: 5% 10% 5% 7.5%;
     color: var(--font-color-default);
     border-bottom: 1px solid var(--font-color-default);    
     font-size: 16px;
 }
-.burger-menu-link:hover {
+.burger-menu-page:hover {
     text-decoration: none;
-    background-color: var(--gray-20);
+    background-color: var(--gray-10);
 }
-.burger-menu-link:focus {
-    background-color: var(--gray-20);
+.burger-menu-page:focus {
+    background-color: var(--gray-10);
 }
 
-.burger-menu-about {
+.burger-menu-bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    background-color: var(--primary);
+}
+
+.burger-menu-utils {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    color: var(--on-primary);
+    font-size: 12px;
+}
+
+.burger-menu-util {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    width: 100%;
+    color: var(--on-primary);
+    font-size: 12px;
+    border-bottom: 1px solid var(--primary-hover);   
+}
+    .burger-menu-util:hover {
+        background-color: var(--primary-hover);
+    }
+    .burger-menu-util:focus {
+        background-color: var(--primary-hover);
+    }
+
+.util-icon-area {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    width: 30px;
+}
+
+.util-icon {
+    height: 20px;
+    margin-right: 7.5%;
+}
+
+.burger-menu-app-data {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 70px;
-    padding: 5% 10% 5% 10%;
-    box-shadow: #00000011 0 -15px 20px;
-    background-color: var(--primary);
+    height: fit-content;
     color: var(--on-primary);
     font-size: 12px;
+    padding: 10px 0;
 }
 
-.burger-menu-about > span:first-child {
+.burger-menu-app-data > span:first-child {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 /* ==========================
-MEDIA QUERIES
+ MEDIA QUERIES
 ========================== */
 
 /* Tablets ----------- */
@@ -104,7 +159,7 @@ MEDIA QUERIES
         right: -40%;
         width: 40%;
     }
-    .burger-menu-link { 
+    .burger-menu-page { 
         font-size: 24px;
     }
 }

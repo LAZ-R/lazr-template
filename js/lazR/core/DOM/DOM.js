@@ -1,3 +1,16 @@
+/* Breakpoints */
+const BREAKPOINTS = {
+    PHONE_MAX_WIDTH: 767,
+    TABLET_MAX_WIDTH: 1279,
+    LAPTOP_MAX_WIDTH: 1919
+}
+export const isPhone = window.innerWidth <= BREAKPOINTS.PHONE_MAX_WIDTH
+export const isTablet = window.innerWidth > BREAKPOINTS.PHONE_MAX_WIDTH && window.innerWidth <= BREAKPOINTS.TABLET_MAX_WIDTH
+export const isTabletOrUp = window.innerWidth > BREAKPOINTS.PHONE_MAX_WIDTH
+export const isLaptop = window.innerWidth > BREAKPOINTS.TABLET_MAX_WIDTH && window.innerWidth <= BREAKPOINTS.LAPTOP_MAX_WIDTH
+export const isLaptopOrUp = window.innerWidth > BREAKPOINTS.TABLET_MAX_WIDTH
+export const isDesktop = window.innerWidth > BREAKPOINTS.LAPTOP_MAX_WIDTH
+
 export const setViewportSize = () => {
     const setDocumentHeight = () => {
         document.documentElement.style.setProperty('--doc-height', `${window.innerHeight}px`)
@@ -14,17 +27,17 @@ export const setHTMLTitle = (pageTitle) => {
     appleTitle.setAttribute('content', pageTitle);
 }
 
-export const htmlStringToElement = (html) => {
+export const getElementFromHTMLString = (htmlString) => {
     var template = document.createElement('template');
-    html = html.trim();
-    template.innerHTML = html;
+    htmlString = htmlString.trim();
+    template.innerHTML = htmlString;
     return template.content.firstChild;
   }
   
 export const createElement = (element, id, className, innerHtml) => {
-    return htmlStringToElement(`<${element} id="${id}" class="${className}">${innerHtml}</${element}>`)
+    return getElementFromHTMLString(`<${element} id="${id}" class="${className}">${innerHtml}</${element}>`)
 }
 
 export const createImgElement = (id, className, src, alt) => {
-    return htmlStringToElement(`<img id="${id}" class="${className}" src="${src}" alt="${alt}">`)
+    return getElementFromHTMLString(`<img id="${id}" class="${className}" src="${src}" alt="${alt}">`)
 }

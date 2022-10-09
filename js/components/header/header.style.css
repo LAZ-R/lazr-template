@@ -1,6 +1,3 @@
-@import url("../../../css/variables.css");
-@import url("./burgerMenu/burgerMenu.style.css");
-
 /* Put here any 'header' specific css */
 
 header {
@@ -29,7 +26,7 @@ header {
 }
 
 /* ==========================
-MEDIA QUERIES
+ MEDIA QUERIES
 ========================== */
 
 /* Tablets ----------- */

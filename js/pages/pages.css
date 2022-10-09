@@ -2,6 +2,7 @@
 
 @import url("./index/index.style.css");
 @import url("./about/about.style.css");
+@import url("./jsonWizard/jsonWizard.style.css");
 
 .page {
     box-sizing: border-box;

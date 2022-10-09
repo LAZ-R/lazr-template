@@ -4,7 +4,7 @@
 @import url("../js/components/components.css");
 
 /* ==========================
-MAIN CONTAINERS
+ MAIN CONTAINERS
 ========================== */
 
 html,
@@ -31,7 +31,7 @@ main {
 }
 
 /* ==========================
-CLICKABLES
+ CLICKABLES
 ========================== */
 
 /* Anchors */
@@ -96,7 +96,7 @@ button {
     }
 
 /* ==========================
-MEDIA QUERIES
+ MEDIA QUERIES
 ========================== */
 
 /* Tablets ----------- */

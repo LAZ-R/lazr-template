@@ -7,7 +7,7 @@ export const renderPage = () => {
         for (let index = 0; index < iterations; index++) {
             str += `
             <span class="about-credit">
-            <b>Category n°${index + 1}</b><br>
+            <b>Category n°${index + 2}</b><br>
             Lorem ipsum<br>
             <a>Link to ressource</a>
             </span>`
@@ -17,22 +17,31 @@ export const renderPage = () => {
 
     LAZR.DOM.setHTMLTitle('About');
 
+    const gray80Filter = LAZR.CSS.getFilterStringForHexValue(LAZR.CSS.getCssRootVariableValue('--gray-80'));
+
     const page = LAZR.DOM.createElement('div', 'aboutPage', 'page', '');
     
     const topPart = LAZR.DOM.createElement('div', 'topPart', 'about-category top-part', `
         <div class="about-sub-category about-app-infos">
-            <span class="about-sub-category about-app-name">Tests CSS</span>
-            <span class="about-sub-category about-app-version">v${LAZR.getAppVersionNumber()}</span>
+            <span class="about-sub-category about-app-name">${LAZR.APP_DATA.getAppName()}</span>
+            <span class="about-sub-category about-app-version">v${LAZR.APP_DATA.getAppVersionNumber()}</span>
         </div>
         <span class="about-credits-label">Credits</span>
         <div class="about-sub-category about-credits">
+            <span class="about-credit">
+                <b>Icon pack</b><br>
+                FontAwsome<br>
+                <a href="https://fontawesome.com/">https://fontawesome.com/</a>
+            </span>
             ${renderCreditsForIterations(10)}
         </div>`);
     page.appendChild(topPart);
 
     const middlePart = LAZR.DOM.createElement('div', 'middlePart', 'about-category middle-part', `
         <div class="about-sub-category about-warning">
+            <div><img src="./images/circle-exclamation-solid.svg" alt="exclamation point" style="filter : ${gray80Filter};"/></div>
             <span>Warning</span>
+            <div><img src="./images/circle-exclamation-solid.svg" alt="exclamation point" style="filter : ${gray80Filter};"/></div>
         </div>
         <div class="about-sub-category about-warning-text">
             <span>It is important to notice than this app uses your device local storage to persist data.<br><br>
