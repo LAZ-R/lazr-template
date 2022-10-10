@@ -11,6 +11,11 @@
     font-size: 18px;
     border-bottom: 2px solid var(--gray-20);
     margin-top: 18px;
+    margin-bottom: 12px;
+}
+.settings-group:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
 }
 .settings-group-name {
     font-family: 'Roboto-Bold';

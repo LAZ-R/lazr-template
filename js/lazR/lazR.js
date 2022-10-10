@@ -46,7 +46,8 @@ export const MATHS = {
 /* Storage */
 export const STORAGE = {
     getUser: () => CORE_STORAGE.getUser(),
-    setUser: (user) => CORE_STORAGE.setUser(user)
+    setUser: (user) => CORE_STORAGE.setUser(user),
+    getUserSetting: (id) => CORE_STORAGE.getUserSetting(id)
 }
 
 /* URL */

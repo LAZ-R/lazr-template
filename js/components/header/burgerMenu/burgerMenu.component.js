@@ -18,13 +18,14 @@ export const renderView = () => {
             <a href="./" class="burger-menu-page">Home</a>
         </div>
         <div class="burger-menu-bottom">
-            <div class="burger-menu-utils">                
+            <div class="burger-menu-utils">   
+                ${LAZR.STORAGE.getUserSetting('jsonWizard').isActive ? `
                 <a href="./?page=jsonWizard" class="burger-menu-page burger-menu-util">
                     <div class="util-icon-area">
                         <img class="util-icon" src="./images/wand-magic-sparkles-solid.svg" alt="a magic wand with sparkles" style="filter: ${onPrimaryFilter};" />
                     </div>                    
                     <span>JSON Wizard</span>
-                </a>
+                </a>` : ''}
                 <a href="./?page=settings" class="burger-menu-page burger-menu-util">
                     <div class="util-icon-area">
                         <img class="util-icon" src="./images/gear-solid.svg" alt="gear" style="filter: ${onPrimaryFilter};" />
