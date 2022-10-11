@@ -95,6 +95,17 @@ button {
         color: var(--primary-hover);
     }
 
+.warning-button {
+    background-color: var(--lazr-red);
+    border: 1px solid var(--lazr-red);
+    color: var(--on-primary);
+}
+
+    .warning-button:hover {
+        border: 1px solid var(--lazr-red);
+        background-color: var(--gray-10);
+        color: var(--lazr-red);
+    }
 /* Switch */
 /* The switch - the box around the slider */
 .switch {

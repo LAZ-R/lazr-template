@@ -2,10 +2,13 @@ import * as LAZR from '../../../lazR/lazR.js';
 
 let isMenuVisible = false;
 
-export const renderView = () => {
-    const onPrimaryFilter = LAZR.CSS.getFilterStringForHexValue(LAZR.CSS.getCssRootVariableValue('--on-primary'));
+const onPrimaryFilter = LAZR.CSS.getFilterStringForHexValue(LAZR.CSS.getCssRootVariableValue('--on-primary'));
 
-    const headerBurgerMenuButton = LAZR.DOM.createElement('button', 'headerBurgerMenuButton', 'header-burger-menu-button', '☰');
+export const renderView = () => {
+
+    const headerBurgerMenuButton = LAZR.DOM.createElement('button', 'headerBurgerMenuButton', 'header-burger-menu-button', `
+    <img src="./images/bars-solid.svg" class="burger-menu-header-button-icon" style="filter: ${onPrimaryFilter};" />
+    `);
     headerBurgerMenuButton.onclick = () => isMenuVisible ? closeMenu() : openMenu();
     document.getElementById('header').appendChild(headerBurgerMenuButton);
 
@@ -50,10 +53,11 @@ export const renderView = () => {
 
 export const closeMenu = () => {
     document.getElementById('burgerMenuBackground').style.opacity = '0%';
-    document.getElementById('headerBurgerMenuButton').innerHTML = '☰';
+    document.getElementById('headerBurgerMenuButton').innerHTML = `
+    <img src="./images/bars-solid.svg" class="burger-menu-header-button-icon" style="filter: ${onPrimaryFilter};" />`;
     LAZR.BREAKPOINTS.isTablet
         ? document.getElementById('burgerMenu').style.right = '-40%'
-        : document.getElementById('burgerMenu').style.right = '-60%';
+        : document.getElementById('burgerMenu').style.right = '-70%';
     setTimeout(() => {
         document.getElementById('burgerMenuBackground').style.display = 'none';
     }, 200);
@@ -61,7 +65,8 @@ export const closeMenu = () => {
 }
 export const openMenu = () => {
     document.getElementById('burgerMenuBackground').style.display = 'flex';
-    document.getElementById('headerBurgerMenuButton').innerHTML = '☒';
+    document.getElementById('headerBurgerMenuButton').innerHTML = `
+    <img src="./images/xmark-solid.svg" class="burger-menu-header-button-icon" style="filter: ${onPrimaryFilter}" />`;
     document.getElementById('burgerMenu').style.right = 0;
     setTimeout(() => {
         document.getElementById('burgerMenuBackground').style.opacity = '50%';

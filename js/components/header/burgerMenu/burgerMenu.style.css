@@ -11,6 +11,10 @@
     background-color: #ffffff00;
 }
 
+.burger-menu-header-button-icon {
+    height: 30px;
+}
+
 .burger-menu-background {
     box-sizing: border-box;
     position: fixed;
@@ -32,9 +36,9 @@
     justify-content: space-between;
     align-items: center;
     top: var(--header-height);
-    right: -60%;
+    right: -70%;
     height: calc(100% - calc(var(--header-height) + var(--footer-height)));
-    width: 60%;
+    width: 70%;
     background-color: var(--html-background-color);
     transition: right .2s ease-in-out;
 }

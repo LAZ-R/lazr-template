@@ -64,7 +64,44 @@
 
 /* ---------------------------------------------------------------- */
 
-.json-wizard-middle-part, .json-wizard-bottom-part {
+.json-wizard-middle-part,
+.json-wizard-bottom-part {
     padding-top: 0;
     min-height: 25%;
+}
+
+.json-wizard-export-top-part {
+    padding-top: 0;
+    min-height: 30%;
+}
+
+.json-wizard-export-middle-part {
+    padding-top: 0;
+    min-height: 50%;
+}
+
+.export-textarea {
+    height: 100%;
+    width: 100%;
+    resize: none;
+}
+
+.json-wizard-export-bottom-part {
+    padding-top: 0;
+    min-height: 20%;
+}
+
+.json-wizard-import-top-part {
+    padding-top: 0;
+    min-height: 50%;
+}
+
+.json-wizard-import-middle-part {
+    padding-top: 0;
+    min-height: 35%;
+}
+
+.json-wizard-import-bottom-part {
+    padding-top: 0;
+    min-height: 15%;
 }
