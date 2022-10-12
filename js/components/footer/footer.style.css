@@ -36,6 +36,7 @@ footer > a {
     }
     footer {
         justify-content: flex-start;
+        font-size: 14px;
     }
 }
 

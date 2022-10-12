@@ -46,26 +46,26 @@
     --doc-height: 100%;
 
     /* header height */
-    --phone-header-height: 10%;
-    --tablet-header-height: 10%;
+    --phone-header-height: 8%;
+    --tablet-header-height: 8%;
     --laptop-header-height: 7%;
     --desktop-header-height: 7%;
 
     --header-height: var(--phone-header-height);
     
     /* main height */
-    --phone-main-height: 90%;
-    --tablet-main-height: 90%;
-    --laptop-main-height: 86%;
-    --desktop-main-height: 86%;
+    --phone-main-height: 92%;
+    --tablet-main-height: 92%;
+    --laptop-main-height: 90%;
+    --desktop-main-height: 90%;
 
     --main-height: var(--phone-main-height);
 
     /* footer height */
     --phone-footer-height: 0%;
     --tablet-footer-height: 0%;
-    --laptop-footer-height: 4%;
-    --desktop-footer-height: 4%;
+    --laptop-footer-height: 3%;
+    --desktop-footer-height: 3%;
 
     --footer-height: var(--phone-footer-height);
 

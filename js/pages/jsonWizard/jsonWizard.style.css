@@ -81,9 +81,11 @@
 }
 
 .export-textarea {
+    box-sizing: border-box;
     height: 100%;
     width: 100%;
     resize: none;
+    padding: 10px 10px;
 }
 
 .json-wizard-export-bottom-part {

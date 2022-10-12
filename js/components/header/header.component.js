@@ -18,7 +18,6 @@ export const renderView = () => {
         header.appendChild(
             LAZR.DOM.createElement('div', 'headerLinksGroup', 'header-links-group', `
                 <a href="./" class="header-link">Home</a>
-                <a href="./?page=about" class="header-link">About</a>
             `));
     }
 }

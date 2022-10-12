@@ -1,18 +1,29 @@
 /* Put here any 'burgerMenu' specific css */
 
+.header-burger-menu-button-area {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 28px;
+    width: 28px;
+    padding: 0;
+}
 .header-burger-menu-button {
     padding: 0;
     background-color: #ffffff00;
     color: var(--on-primary);
-    font-size: 32px;
-    border: none;;
+    border: none;
+    opacity: 100%;
+    transition: opacity .2s linear;
 }
 .header-burger-menu-button:hover {
     background-color: #ffffff00;
 }
 
 .burger-menu-header-button-icon {
-    height: 30px;
+    height: 28px;
 }
 
 .burger-menu-background {
@@ -61,7 +72,7 @@
     align-items: center;
     height: fit-content;
     width: 100%;
-    padding: 7.5% 10% 7.5% 7.5%;
+    padding: 6% 10% 6% 7.5%;
     color: var(--font-color-default);
     border-bottom: 1px solid var(--gray-10);
     font-size: 18px;

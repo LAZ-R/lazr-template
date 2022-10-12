@@ -66,7 +66,7 @@ export const renderPage = () => {
             const exportBottomPart = LAZR.DOM.createElement('div', 'exportBottomPart', 'json-wizard-category json-wizard-export-bottom-part', `  
                 <button id="copyClipboardButton" class="primary-button json-wizard-button" onclick="copyToClipboard()">
                     <span class="json-wizard-category-title">Copy to clipboard</span>
-                    <img class="json-wizard-category-icon" src="./images/clipboard-regular.svg" alt="an arrow to the right comming into a rectangle" style="filter: ${onPrimaryFilter};" />
+                    <img class="json-wizard-category-icon" src="./images/font-awsome/clipboard-regular.svg" alt="an arrow to the right comming into a rectangle" style="filter: ${onPrimaryFilter};" />
                 </button>`);
             page.appendChild(exportBottomPart);
             break;
@@ -76,20 +76,21 @@ export const renderPage = () => {
                 <div class="json-wizard-intro-area">
                     <h1>Import data</h1>
                     <span>
-                        Here you can paste a stringified JSON to be used as your local storage data.<br>
-                        <br>
                         <span style="color: var(--lazr-red)">
-                        Beware that it needs to be formated <b>exactly</b> as the exported data.<br>
-                        <b>This feature is still in early developpement, and this app might crash if any data is not formatted properly.<br>
+                        <b>This feature is for advanced users only.</b><br>
+                        <b>Use it at your own risk.</b><br>
                         <br>
-                        Use it at your own risk.</b>
+                        Here you can paste a stringified JSON to be used as your local storage data.
+                        Beware that it needs to be formated <b>exactly</b> as the exported data.<br>
+                        <br>
+                        <b>This app WILL crash if any data is not formatted properly.</b>
                         </span>
                     </span>
                 </div>`);
             page.appendChild(importTopPart);
 
             const importMiddlePart = LAZR.DOM.createElement('div', 'importMiddlePart', 'json-wizard-category json-wizard-import-middle-part', `
-                <textarea id="importTextarea" class="export-textarea" ></textarea>`);
+                <textarea id="importTextarea" class="export-textarea" placeholder="paste here"></textarea>`);
             page.appendChild(importMiddlePart);
 
             const importBottomPart = LAZR.DOM.createElement('div', 'importBottomPart', 'json-wizard-category json-wizard-import-bottom-part', `  
@@ -107,7 +108,7 @@ export const renderPage = () => {
                         Here you can export your local storage data, or import external data into it.
                     </span>
                     <div class="json-wizard-icon-area">
-                        <img class="json-wizard-icon" src="./images/wand-magic-sparkles-solid.svg" alt="a magic wand with sparkles" style="filter: ${primaryFilter};" />
+                        <img class="json-wizard-icon" src="./images/font-awsome/wand-magic-sparkles-solid.svg" alt="a magic wand with sparkles" style="filter: ${primaryFilter};" />
                     </div>
                 </div>`);
             page.appendChild(topPart);
@@ -115,14 +116,14 @@ export const renderPage = () => {
             const middlePart = LAZR.DOM.createElement('div', 'middlePart', 'json-wizard-category json-wizard-middle-part', `
                 <button class="primary-button json-wizard-button" onclick="redirectToJSONWSubPage('export')">
                     <span class="json-wizard-category-title">Export local storage data</span>
-                    <img class="json-wizard-category-icon" src="./images/right-from-bracket-solid.svg" alt="an arrow to the right comming from a rectangle" style="filter: ${onPrimaryFilter};" />
+                    <img class="json-wizard-category-icon" src="./images/font-awsome/right-from-bracket-solid.svg" alt="an arrow to the right comming from a rectangle" style="filter: ${onPrimaryFilter};" />
                 </button>`);
             page.appendChild(middlePart);
 
             const bottomPart = LAZR.DOM.createElement('div', 'bottomPart', 'json-wizard-category json-wizard-bottom-part', `  
                 <button class="primary-button json-wizard-button" onclick="redirectToJSONWSubPage('import')">
                     <span class="json-wizard-category-title">Import data to local storage</span>
-                    <img class="json-wizard-category-icon" src="./images/right-to-bracket-solid.svg" alt="an arrow to the right comming into a rectangle" style="filter: ${onPrimaryFilter};" />
+                    <img class="json-wizard-category-icon" src="./images/font-awsome/right-to-bracket-solid.svg" alt="an arrow to the right comming into a rectangle" style="filter: ${onPrimaryFilter};" />
                 </button>`);
             page.appendChild(bottomPart);
             break;
