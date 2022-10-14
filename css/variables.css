@@ -46,7 +46,7 @@
     --doc-height: 100%;
 
     /* header height */
-    --phone-header-height: 8%;
+    --phone-header-height: 9%;
     --tablet-header-height: 8%;
     --laptop-header-height: 7%;
     --desktop-header-height: 7%;
@@ -54,7 +54,7 @@
     --header-height: var(--phone-header-height);
     
     /* main height */
-    --phone-main-height: 92%;
+    --phone-main-height: 91%;
     --tablet-main-height: 92%;
     --laptop-main-height: 90%;
     --desktop-main-height: 90%;

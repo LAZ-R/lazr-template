@@ -106,6 +106,7 @@ button {
         background-color: var(--gray-10);
         color: var(--lazr-red);
     }
+
 /* Switch */
 /* The switch - the box around the slider */
 .switch {
@@ -132,8 +133,8 @@ button {
     right: 0;
     bottom: 0;
     background-color: var(--gray-20);
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .3s;
+    transition: .3s ease-out;
   }
   
   .slider:before {
@@ -144,8 +145,8 @@ button {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .3s;
+    transition: .3s ease-out;
   }
   
   input:checked + .slider {

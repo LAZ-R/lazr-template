@@ -16,7 +16,7 @@
     color: var(--on-primary);
     border: none;
     opacity: 100%;
-    transition: opacity .2s linear;
+    transition: opacity .1s linear;
 }
 .header-burger-menu-button:hover {
     background-color: #ffffff00;

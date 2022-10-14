@@ -44,14 +44,13 @@ export const renderPage = () => {
             <div><img src="./images/font-awsome/circle-exclamation-solid.svg" alt="exclamation point" style="filter : ${gray80Filter};"/></div>
         </div>
         <div class="about-sub-category about-warning-text">
-            <span>It is important to notice than this app uses your device local storage to persist data.<br><br>
+            <span>It is important to notice than this app uses your device local storage to persist data.<br>
             All this app data will be lost if you clean your cache.</span>
         </div>`);
     page.appendChild(middlePart);
 
     const bottomPart = LAZR.DOM.createElement('div', 'bottomPart', 'about-category bottom-part', `
         <div class="about-sub-category lazr-card">
-            <span>made by</span>
             <img class="lazr-logo" src="https://laz-r.github.io/icon-512.webp"/>
         </div>
         <div class="about-sub-category links-card">
