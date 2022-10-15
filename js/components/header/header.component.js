@@ -7,7 +7,7 @@ export const renderView = () => {
     const headerIndexLink = LAZR.DOM.createElement('a', '', 'header-index-link', '');
     headerIndexLink.setAttribute('href', './');
 
-    const headerLogo = LAZR.DOM.createImgElement('headerLogo', 'header-logo', './images/logo-white.svg', 'lazr logo');
+    const headerLogo = LAZR.DOM.createImgElement('headerLogo', 'header-logo', './medias/images/logo-white.svg', 'lazr logo');
     LAZR.CSS.applyColorFilterOnElement(headerLogo, LAZR.CSS.getCssRootVariableValue('--on-primary'));
     
     headerIndexLink.appendChild(headerLogo);

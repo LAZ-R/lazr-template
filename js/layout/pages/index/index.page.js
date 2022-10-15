@@ -1,4 +1,4 @@
-import * as LAZR from '../../lazR/lazR.js';
+import * as LAZR from '../../../lazR/lazR.js';
 
 export const renderPage = () => {
 

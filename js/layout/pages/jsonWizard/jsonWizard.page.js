@@ -1,4 +1,4 @@
-import * as LAZR from '../../lazR/lazR.js';
+import * as LAZR from '../../../lazR/lazR.js';
 
 const redirectToJSONWSubPage = (type) => {
     window.location = `./?page=jsonWizard&data=${type}`;
@@ -66,7 +66,7 @@ export const renderPage = () => {
             const exportBottomPart = LAZR.DOM.createElement('div', 'exportBottomPart', 'json-wizard-category json-wizard-export-bottom-part', `  
                 <button id="copyClipboardButton" class="primary-button json-wizard-button" onclick="copyToClipboard()">
                     <span class="json-wizard-category-title">Copy to clipboard</span>
-                    <img class="json-wizard-category-icon" src="./images/font-awsome/clipboard-regular.svg" alt="an arrow to the right comming into a rectangle" style="filter: ${onPrimaryFilter};" />
+                    <img class="json-wizard-category-icon" src="./medias/images/font-awsome/clipboard-regular.svg" alt="an arrow to the right comming into a rectangle" style="filter: ${onPrimaryFilter};" />
                 </button>`);
             page.appendChild(exportBottomPart);
             break;
@@ -108,7 +108,7 @@ export const renderPage = () => {
                         Here you can export your local storage data, or import external data into it.
                     </span>
                     <div class="json-wizard-icon-area">
-                        <img class="json-wizard-icon" src="./images/font-awsome/wand-magic-sparkles-solid.svg" alt="a magic wand with sparkles" style="filter: ${primaryFilter};" />
+                        <img class="json-wizard-icon" src="./medias/images/font-awsome/wand-magic-sparkles-solid.svg" alt="a magic wand with sparkles" style="filter: ${primaryFilter};" />
                     </div>
                 </div>`);
             page.appendChild(topPart);
@@ -116,14 +116,14 @@ export const renderPage = () => {
             const middlePart = LAZR.DOM.createElement('div', 'middlePart', 'json-wizard-category json-wizard-middle-part', `
                 <button class="primary-button json-wizard-button" onclick="redirectToJSONWSubPage('export')">
                     <span class="json-wizard-category-title">Export local storage data</span>
-                    <img class="json-wizard-category-icon" src="./images/font-awsome/right-from-bracket-solid.svg" alt="an arrow to the right comming from a rectangle" style="filter: ${onPrimaryFilter};" />
+                    <img class="json-wizard-category-icon" src="./medias/images/font-awsome/right-from-bracket-solid.svg" alt="an arrow to the right comming from a rectangle" style="filter: ${onPrimaryFilter};" />
                 </button>`);
             page.appendChild(middlePart);
 
             const bottomPart = LAZR.DOM.createElement('div', 'bottomPart', 'json-wizard-category json-wizard-bottom-part', `  
                 <button class="primary-button json-wizard-button" onclick="redirectToJSONWSubPage('import')">
                     <span class="json-wizard-category-title">Import data to local storage</span>
-                    <img class="json-wizard-category-icon" src="./images/font-awsome/right-to-bracket-solid.svg" alt="an arrow to the right comming into a rectangle" style="filter: ${onPrimaryFilter};" />
+                    <img class="json-wizard-category-icon" src="./medias/images/font-awsome/right-to-bracket-solid.svg" alt="an arrow to the right comming into a rectangle" style="filter: ${onPrimaryFilter};" />
                 </button>`);
             page.appendChild(bottomPart);
             break;

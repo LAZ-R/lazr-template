@@ -2,25 +2,25 @@
   "name": "laz_R Template",
   "icons": [
     {
-      "src": "./images/app-maskable-icons/app_icon_144.png",
+      "src": "./medias/app-maskable-icons/app_icon_144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./images/app-maskable-icons/app_icon_152.png",
+      "src": "./medias/app-maskable-icons/app_icon_152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./images/app-maskable-icons/app_icon_192.png",
+      "src": "./medias/app-maskable-icons/app_icon_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./images/app-maskable-icons/app_icon_512.png",
+      "src": "./medias/app-maskable-icons/app_icon_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

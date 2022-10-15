@@ -1,4 +1,4 @@
-import * as LAZR from '../../lazR/lazR.js';
+import * as LAZR from '../../../lazR/lazR.js';
 
 let user = LAZR.STORAGE.getUser();
 let settings = user.settings;

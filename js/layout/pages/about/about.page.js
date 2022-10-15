@@ -1,4 +1,4 @@
-import * as LAZR from '../../lazR/lazR.js';
+import * as LAZR from '../../../lazR/lazR.js';
 
 export const renderPage = () => {
 
@@ -39,9 +39,9 @@ export const renderPage = () => {
 
     const middlePart = LAZR.DOM.createElement('div', 'middlePart', 'about-category middle-part', `
         <div class="about-sub-category about-warning">
-            <div><img src="./images/font-awsome/circle-exclamation-solid.svg" alt="exclamation point" style="filter : ${gray80Filter};"/></div>
+            <div><img src="./medias/images/font-awsome/circle-exclamation-solid.svg" alt="exclamation point" style="filter : ${gray80Filter};"/></div>
             <span>Warning</span>
-            <div><img src="./images/font-awsome/circle-exclamation-solid.svg" alt="exclamation point" style="filter : ${gray80Filter};"/></div>
+            <div><img src="./medias/images/font-awsome/circle-exclamation-solid.svg" alt="exclamation point" style="filter : ${gray80Filter};"/></div>
         </div>
         <div class="about-sub-category about-warning-text">
             <span>It is important to notice than this app uses your device local storage to persist data.<br>
