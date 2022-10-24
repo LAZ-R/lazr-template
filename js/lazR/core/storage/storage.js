@@ -8,7 +8,7 @@ if (STORAGE.getItem(`${appShortName}FirstTime`) === null) {
         settings: [
             {
                 id: 1,
-                name: 'Basics',
+                name: 'Screen',
                 settings: [
                     {
                         id: 'keepScreenAwake',

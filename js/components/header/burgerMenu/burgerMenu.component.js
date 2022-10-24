@@ -58,7 +58,6 @@ const handleVersionNumberClick = () => {
         }
         window.location = `./?page=settings`;
     }
-    
 }
 window.handleVersionNumberClick = handleVersionNumberClick;
 

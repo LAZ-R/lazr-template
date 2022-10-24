@@ -55,7 +55,7 @@ export const renderPage = () => {
         <h1 style="padding-left: var(--horizontal-padding)">Settings</h1>`);
     settings.forEach(settingsGroup => {
         if ((settingsGroup.name == 'Advanced' && LAZR.STORAGE.isUserDev()) || settingsGroup.name != 'Advanced') {
-        page.appendChild(LAZR.DOM.getElementFromHTMLString(renderSettingsGroup(settingsGroup)));
+            page.appendChild(LAZR.DOM.getElementFromHTMLString(renderSettingsGroup(settingsGroup)));
         }
     });
 
