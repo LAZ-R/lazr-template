@@ -40,6 +40,28 @@ const openMenu = () => {
     isMenuVisible = true;
 }
 
+let versionNumberClick = 0;
+
+const handleVersionNumberClick = () => {
+    versionNumberClick += 1;
+    if (versionNumberClick == 6) {
+        if (!LAZR.STORAGE.isUserDev()) {
+            let user = LAZR.STORAGE.getUser();
+            user.isDev = true;
+            LAZR.STORAGE.setUser(user);
+            window.alert('You now have access to the "Advanced" settings section');
+        } else {
+            let user = LAZR.STORAGE.getUser();
+            user.isDev = false;
+            LAZR.STORAGE.setUser(user);
+            window.alert('You now lose access to the "Advanced" settings section');
+        }
+        window.location = `./?page=settings`;
+    }
+    
+}
+window.handleVersionNumberClick = handleVersionNumberClick;
+
 export const renderView = () => {
 
     const headerBurgerMenuButtonArea = LAZR.DOM.createElement('div', 'headerBurgerMenuButtonArea', 'header-burger-menu-button-area', ``);
@@ -80,7 +102,7 @@ export const renderView = () => {
                 </a>
             </div>
             <div class="burger-menu-app-data">
-                <span>v${LAZR.APP_DATA.getAppVersionNumber()}</span>
+                <span style="user-select: none;" onclick="handleVersionNumberClick()">v${LAZR.APP_DATA.getAppVersionNumber()}</span>
                 <span>&copy; ${new Date().getFullYear()} • laz_R</span>
             </div>
         </div>`);

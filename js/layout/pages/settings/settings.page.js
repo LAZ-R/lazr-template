@@ -4,15 +4,22 @@ let user = LAZR.STORAGE.getUser();
 let settings = user.settings;
 
 const handleCheck = (id) => {
+    let shoudlRefresh = false;
     settings.forEach(settingsGroups => {
         settingsGroups.settings.forEach(setting => {
             if (setting.id == id) {
                 setting.isActive = document.getElementById(id).checked;
+                if (setting.id == 'jsonWizard') shoudlRefresh = true;
             }
         });
     });
     user.settings = settings;
     LAZR.STORAGE.setUser(user);
+    if (shoudlRefresh) {
+        setTimeout(() => {
+            window.location = './?page=settings';
+        }, 300);
+    }
 };
 window.handleCheck = handleCheck;
 
@@ -47,9 +54,10 @@ export const renderPage = () => {
     const page = LAZR.DOM.createElement('div', 'settingsPage', 'page', `
         <h1 style="padding-left: var(--horizontal-padding)">Settings</h1>`);
     settings.forEach(settingsGroup => {
+        if ((settingsGroup.name == 'Advanced' && LAZR.STORAGE.isUserDev()) || settingsGroup.name != 'Advanced') {
         page.appendChild(LAZR.DOM.getElementFromHTMLString(renderSettingsGroup(settingsGroup)));
+        }
     });
-    
 
     return page;
 }

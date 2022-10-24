@@ -4,6 +4,7 @@ const appShortName = 'lzrTmplt';
 if (STORAGE.getItem(`${appShortName}FirstTime`) === null) {
     STORAGE.setItem(`${appShortName}FirstTime`, '0');
     let userTMP = {
+        isDev: false,
         settings: [
             {
                 id: 1,
@@ -37,6 +38,10 @@ export const getUser = () => {
 }
 export const setUser = (user) => {
     STORAGE.setItem(`${appShortName}User`, JSON.stringify(user));
+}
+export const isUserDev = () => {
+    const user = getUser();
+    return user.isDev;
 }
 /* ------------------------------------------------------------------------- */
 export const getUserSetting = (id) => {
