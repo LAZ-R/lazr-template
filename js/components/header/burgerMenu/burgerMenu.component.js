@@ -101,7 +101,7 @@ export const renderView = () => {
                 </a>
             </div>
             <div class="burger-menu-app-data">
-                <span style="user-select: none;" onclick="handleVersionNumberClick()">v${LAZR.APP_DATA.getAppVersionNumber()}</span>
+                <span style="user-select: none; width: 100%; text-align: center;" onclick="handleVersionNumberClick()">v${LAZR.APP_DATA.getAppVersionNumber()}</span>
                 <span>&copy; ${new Date().getFullYear()} • laz_R</span>
             </div>
         </div>`);
